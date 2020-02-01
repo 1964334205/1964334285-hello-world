@@ -29,11 +29,13 @@ public class zeng {
         Document student = parameter.document();
         int intjishu = parameter.jishu();
         /*对用户输入数据进行保存*/
+        /*瞎搞测试*/
         for (int i = 0; i < storage.length; i++) {
             System.out.print(xigap[i] + "：");
             Scanner scanner = new Scanner(System.in);
             storage[i] = scanner.next();
         }
+        /*瞎搞测试*//*瞎搞测试*//*瞎搞测试*//*瞎搞测试*/
         /*使用户数据创建新节点，并初始化*/
         for (int i = 0; i < storage.length; i++) {
             elements[i] = student.createElement(xigap2[i]);
@@ -46,7 +48,7 @@ public class zeng {
         if (true) {
             /*挂载节点*/
             node.appendChild(guzai);
-
+            /*瞎搞测试*//*瞎搞测试*//*瞎搞测试*//*瞎搞测试*/
             /*将改变后的内存文件写入到硬盘中*/
             Hard_disk_type.hard(student, "src/XML学习/学生管理系统.xml");
         }
@@ -61,6 +63,7 @@ public class zeng {
             /*将改变后的内存文件写入到硬盘中*/
             Hard_disk_type.hard(student, "src/XML学习/学生管理系统.xml");
         }
+        /*瞎搞测试*//*瞎搞测试*//*瞎搞测试*//*瞎搞测试*/
         /*对计数属性进行刷新*/
         Element JISHU = (Element) student.getElementsByTagName("计数").item(0);
         JISHU.getParentNode().removeChild(JISHU);
@@ -71,6 +74,8 @@ public class zeng {
             /*将改变后的内存文件写入到硬盘中*/
             Hard_disk_type.hard(student, "src/XML学习/学生管理系统.xml");
         }
+        /*瞎搞测试*//*瞎搞测试*//*瞎搞测试*//*瞎搞测试*/
         print.print(student, intjishu, "写入成功");
+        /*瞎搞测试*//*瞎搞测试*//*瞎搞测试*//*瞎搞测试*/
     }
 }
